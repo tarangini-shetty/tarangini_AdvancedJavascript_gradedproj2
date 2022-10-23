@@ -1,15 +1,13 @@
-// import {json} from './Data.json';
-// //let json = require('./Data.json');
-
 // let headers = new Headers();
 // headers.append('Content-Type', 'application/json');
 // headers.append('Accept', 'application/json');
-// headers.append('Origin','http://localhost:8080');
+// headers.append('Access-Control-Allow-Credentials', 'true');
 
-// fetch('http://192.168.0.232:8080/Data.json', {mode: 'no-cors'})
-//   .then(response => response.json())
-//   .then(jsonResponse => console.log(jsonResponse))   ;  
+// fetch('https://raw.githubusercontent.com/tarangini-shetty/tarangini_AdvancedJavascript_gradedproj2/master/Data.json', { mode: 'no-cors', headers:headers})
+//   .then(response => response)
+//   .then(jsonResponse => console.log(jsonResponse));  
     
+
 jsonData = {
 	"resume" : 
 	[ 
