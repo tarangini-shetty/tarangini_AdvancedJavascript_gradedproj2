@@ -1,14 +1,3 @@
-
-// credentials = [
-//     {
-//         "username":"test1",
-//         "password":"test1"
-//     },
-//     {
-//         "username":"test2",
-//         "password":"test2"
-//     }
-// ]
 let credentials_url = 'https://raw.githubusercontent.com/tarangini-shetty/tarangini_AdvancedJavascript_gradedproj2/master/credentials.json'
 
 function preventBack() { 
