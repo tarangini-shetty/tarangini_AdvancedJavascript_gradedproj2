@@ -1,14 +1,15 @@
 
-credentials = [
-    {
-        "username":"test1",
-        "password":"test1"
-    },
-    {
-        "username":"test2",
-        "password":"test2"
-    }
-]
+// credentials = [
+//     {
+//         "username":"test1",
+//         "password":"test1"
+//     },
+//     {
+//         "username":"test2",
+//         "password":"test2"
+//     }
+// ]
+let credentials_url = 'https://raw.githubusercontent.com/tarangini-shetty/tarangini_AdvancedJavascript_gradedproj2/master/credentials.json'
 
 function preventBack() { 
 	window.history.forward(); 
@@ -17,6 +18,13 @@ setTimeout("preventBack()", 0);
 window.onunload = function () { null };
 
 function login()
+{
+    fetch(credentials_url)
+	    .then((response) => response.json())
+		.then((credentials) => { validate(credentials); });
+
+}
+function validate(credentials)
 {
 	var uname = document.getElementById("username").value;
 	var pwd = document.getElementById("pwd").value;
