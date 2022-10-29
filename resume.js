@@ -64,7 +64,6 @@ function searchJob(job, jsonData){
 			appliedForInResume = jsonData['resume'][i]['basics']['AppliedFor']
 			if (appliedForInResume.toLowerCase() === job.toLowerCase()){
 				searchJson['resume'].push(jsonData['resume'][i])
-				//numberofResume = numberofResume + 1
 			}
 		}
 		if (searchJson['resume'].length != 0){
